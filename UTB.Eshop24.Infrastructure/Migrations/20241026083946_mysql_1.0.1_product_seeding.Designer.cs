@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using UTB.Eshop24.Infrastructure.Database;
 
@@ -10,9 +11,11 @@ using UTB.Eshop24.Infrastructure.Database;
 namespace UTB.Eshop24.Infrastructure.Migrations
 {
     [DbContext(typeof(EshopDbContext))]
-    partial class EshopDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241026083946_mysql_1.0.1_product_seeding")]
+    partial class mysql_101_product_seeding
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
