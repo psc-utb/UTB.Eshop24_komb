@@ -13,4 +13,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\UTB.Eshop24.Application\UTB.Eshop24.Application.csproj" />
+    <ProjectReference Include="..\UTB.Eshop24.Domain\UTB.Eshop24.Domain.csproj" />
+    <ProjectReference Include="..\UTB.Eshop24.Infrastructure\UTB.Eshop24.Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
