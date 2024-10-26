@@ -1,8 +1,9 @@
-﻿
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace UTB.Eshop24.Domain.Entities
 {
+    [Table(nameof(Product))]
     public class Product : Entity
     {
         [Required]
