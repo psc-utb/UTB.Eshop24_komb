@@ -28,8 +28,13 @@ namespace UTB.Eshop24_komb.Web.Areas.Admin.Controllers
         [HttpPost]
         public IActionResult Create(Product product)
         {
-            _productService.Create(product);
-            return RedirectToAction(nameof(Index));
+            if (ModelState.IsValid)
+            {
+                _productService.Create(product);
+                return RedirectToAction(nameof(Index));
+            }
+
+            return View(product);
         }
 
         public IActionResult Delete(int id)
